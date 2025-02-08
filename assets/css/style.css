@@ -1,0 +1,509 @@
+
+
+
+a {
+  color: #3fbbc0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #65c9cd;
+  text-decoration: none;
+}
+li{
+  color:#373737;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto", sans-serif;
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+  padding: 0;
+  overflow: hidden;
+
+}
+
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  font-family: "League Spartan, sans-serif",
+}
+
+.section-title h3 {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: normal;
+  letter-spacing: .5px;
+  margin-bottom: 0;
+  padding-bottom: 1px;
+  position: relative;
+}
+
+/* .section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #3fbbc0;
+  bottom: 0;
+  left: calc(50% - 25px);
+} */
+
+.section-title p {
+  margin-top: 2px;
+  margin-bottom: 0;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: '"Poppins", sans-serif',
+  
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+/* Card Container */
+.mentor-card {
+  padding: 2px;
+  margin: 7px;
+  margin-top: 50px;
+  border-radius: 20px;
+  position: relative; /* Ensure the card content is positioned relative to the container */
+  overflow: visible; /* Allow content to overflow the container */
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+  max-width: 400px;
+  text-align: center;
+  background-image: linear-gradient(white, white),
+    linear-gradient(to right, #2f58b1, #01a6a2);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  transition: transform 0.3s ease-in-out;
+}
+
+.mentor-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Inner Content */
+.mentor-card-inner {
+  position: relative;
+  z-index: 1;
+  padding-top: 45px; /* Space for the overlapping image */
+}
+
+/* Mentor Image */
+.mentor-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 4px solid white;
+  background-image: linear-gradient(to right, #2f58b1, #01a6a2);
+  padding: 3px;
+  margin: 0 auto;
+  position: absolute;
+  top: -50px; /* Position image above the card */
+  left: 50%;
+  transform: translateX(-50%);
+  transition: transform 0.3s ease-in-out;
+  z-index: 2; /* Ensure the image is above the card */
+}
+
+.mentor-img:hover {
+  transform: translate(-50%, -10px) scale(1.1); /* Slight hover effect */
+}
+
+/* Mentor Name */
+.mentor-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2f58b1;
+  
+}
+
+/* Mentor Description */
+.mentor-description {
+  font-size: 0.95rem;
+  color: #333;
+  line-height: 1.6;
+  padding: 1px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: justify;
+  margin-top:-5px;
+
+}
+
+/* Read More Toggle */
+.toggle-read-more {
+  color: #2575fc;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.toggle-read-more:hover {
+  color: #6a11cb;
+}
+
+
+
+/*--------------------------------------------------------------
+# Contact
+--------------------------------------------------------------*/
+.contact .info-box {
+  color: #444444;
+  text-align: center;
+  padding: 20px 0 30px 0;
+  background-color: #ffffff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+            rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; /* ✅ Correct */
+}
+
+.contact .info-box .bx {
+  color: #01a6a2; /* Icon color */
+  border-radius: 50%; /* Circular border */
+  padding: 7px; /* Padding inside the border */
+  border: 3px dotted #e0e6f4; /* Dotted border */
+  display: inline-block; /* Ensure the element respects the box model */
+  width: 40px; /* Optional: Set fixed width to fit the circle */
+  height: 40px; /* Optional: Set fixed height to fit the circle */
+  box-sizing: border-box; /* Include border and padding in the element size */
+}
+
+.contact .info-box h3 {
+  font-size: 20px;
+  color: #777777;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.contact .info-box p {
+  padding: 0;
+  line-height: 24px;
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.contact .php-email-form {
+  box-shadow: 0 0 20px rgba(214, 215, 216, 0.5);
+  padding: 30px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br+br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input:focus,
+.contact .php-email-form textarea:focus {
+  border-color: #3fbbc0;
+}
+
+.contact .php-email-form input {
+  padding: 10px 15px;
+}
+
+.contact .php-email-form textarea {
+  padding: 12px 15px;
+}
+
+.contact .php-email-form button[type=submit] {
+  background: #3fbbc0;
+  border: 0;
+  padding: 10px 30px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 4px;
+}
+
+.contact .php-email-form button[type=submit]:hover {
+  background: #65c9cd;
+}
+
+@keyframes animate-loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* scroll button*/
+.top-to-btm {
+  position: relative;
+}
+.icon-position {
+  position: fixed;
+  bottom: 120px;
+  right: 45px;
+  z-index: 20;
+}
+.icon-style {
+  background-color: #551b54;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  cursor: pointer;
+  animation: movebtn 7s ease-in-out infinite;
+  transition: all 0.5s ease-in-out;
+}
+.icon-style:hover {
+  animation: none;
+  background: #fff;
+  color: #551b54;
+  border: 2px solid #551b54;
+}
+@keyframes movebtn {
+  0% {
+    transform: translateY(0px);
+  }
+  25% {
+    transform: translateY(20px);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+/* end scroll*/
+
+/* read more part*/
+.ps {
+  max-height: 360px;
+  overflow: hidden;
+  position: relative;
+ 
+}
+
+.ps::before {
+  content: "";
+  position: absolute;
+  /* height: 1px; */
+  width: 100%;
+  margin: auto;
+  bottom: 0;
+  pointer-events: none;
+  background: linear-gradient(to bottom, transparent, white);
+}
+
+.check {
+  appearance: none;
+  /* border: 1px solid black; */
+  /* background-image: linear-gradient(to right, #309cd1 , #0879b2); */
+  /* background-image: linear-gradient(to right, #a4e100 , #65bb00); */
+  /* background-color: #7fd01e; */
+  color:darkblue;
+  /* padding: 0.9em; */
+  border-radius: 0.75em;
+  cursor: pointer;
+  font-weight: 550;
+  font-size:17px;
+ 
+  /* margin-top: 1rem; */
+}
+
+.check::before {
+  content: "Read more >";
+ 
+}
+
+.check:checked::before {
+  content: "Read less";
+}
+
+.ps:has(+ .check:checked) {
+  max-height: none;
+}
+/* end read more part*/
+
+
+/* Parallox Section */ 
+
+.events1 {
+  background-image: url('/images/parallox3.jpg') ;
+  /* background: url("../public/vision.jpg") center center no-repeat; */
+  background-size: cover;
+  position: relative;
+ 
+}
+.events1::before {
+  content: '';
+  /* background-image:linear-gradient(to right, rgba(58,37,109,0.6), rgba(23,43,77,0.9)); */
+  /* background-image:linear-gradient(to right, rgba(54,30,80,0.8), rgba(58,37,109,0.9)); */
+  /* background-color:rgba(54,30,80,0.6); */
+  /* background-color: rgba(12, 11, 10, 0.6); */
+  position: absolute;
+  /* z-index:- 1; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.events1 .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .events1 {
+    background-attachment: fixed;
+  }
+}
+
+/* end parallox section */
+
+
+
+.curved-section {
+  position: relative;
+  height: 100%; /* Adjust height as needed */
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* clip-path: ellipse(100% 100% at 30% 0%); Curve at the top */
+}
+
+.contents {
+  padding: 5px;
+  color: #fff;
+  text-align: center;
+}
+  
+/*gradient text*/
+.paras {
+  font-size: 28px;
+  font-family: "ABeeZee, sans-serif";
+  font-weight: bold;
+  background: linear-gradient(
+    to right,
+    #2f58b1 0%,
+    #01a6a2 100%,
+    #01a6a2 100%,
+    #01a6a2 100%
+  );
+  /* background: -webkit-linear-gradient(#eee, #333); */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+@media screen and (max-width: 600px) {
+  .paras {
+    font-size: 25px;
+    background: none; /* Removes the gradient background */
+    -webkit-background-clip: unset; /* Disables background clipping */
+    -webkit-text-fill-color: #01a6a2; /* Sets text color to white */
+    color: #01a6a2; /* Fallback for non-webkit browsers */
+  }
+}
+.h8 {
+  font-size: 42px;
+  font-weight: 600;
+}
+@media screen and (max-width: 600px) {
+  .h8 {
+    font-size: 26px;
+  }
+}
+
+
+/* Parallox Section */ 
+
+.events2 {
+  background-image: url('/images/nashikclinic/clinics8.webp') ;
+  /* background: url("../public/vision.jpg") center center no-repeat; */
+  background-size: cover;
+  position: relative;
+ 
+}
+.events2::before {
+  content: '';
+  /* background-image:linear-gradient(to right, rgba(58,37,109,0.6), rgba(23,43,77,0.9)); */
+  /* background-image:linear-gradient(to right, rgba(54,30,80,0.8), rgba(58,37,109,0.9)); */
+  /* background-color:rgba(54,30,80,0.6); */
+  /* background-color: rgba(12, 11, 10, 0.6); */
+  position: absolute;
+  /* z-index:- 1; */
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.events2 .container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .events2 {
+    background-attachment: fixed;
+  }
+}
+
+/* end parallox section */
+
+
