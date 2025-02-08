@@ -2,7 +2,7 @@ import { grey, common } from '@mui/material/colors';
 const palette = {
     mode: 'light',
     background: {
-        default: '#eaeef7',
+        default: '#f7f7f7',
         paper: common.white,
     },
     text: {

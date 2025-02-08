@@ -17,7 +17,6 @@ function ResponsiveAppBar() {
 
     const contactno1 = "9820097046";
 
-
     const textVariants = {
         initial: {
             x: -500,
