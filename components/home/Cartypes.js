@@ -1,9 +1,7 @@
 import React, { useState } from 'react'
-import Avatar from '@mui/material/Avatar';
-import { Box, Button, Card, CardActions, Container, Grid, Hidden, Link, Typography } from '@mui/material';
+import { Box, Card, CardActions, Container, Grid, Hidden, Link, Typography } from '@mui/material';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import { useTheme, useMediaQuery } from '@mui/material';
 import Heading from './Heading';
 import { headList2 } from '../constants/titlefile';
 
@@ -15,6 +13,8 @@ export default function Cartypes() {
         
         img: "/images/vehicles/car1.jpg",
         title: 'Sedan',
+        subtitle:'e.g. Toyota Prius, VW Passat',
+        passenger:'4',
         para: <span>
 
             Agile coaching is a specialized form of coaching aimed at helping individuals, teams, and organizations adopt and optimize Agile methodologies.
@@ -24,23 +24,29 @@ export default function Cartypes() {
     {
         img: "/images/vehicles/car2.jpg",
         title: 'SUV',
+        subtitle:'e.g. Toyota Prius, VW Passat',
+        passenger:'6',
         para: <span>
             Scrum Master coaching is a specialized role within the Agile framework focused on facilitating the adoption and practice of Scrum principles.</span>,
-        links: '/scrum-master-coaching'
+      
 
     },
     {
         img: "/images/vehicles/car3.jpg",
         title: 'MUV',
+        subtitle:'e.g. Toyota Prius, VW Passat',
+        passenger:'7',
         para: <span>Life coaching is a professional service aimed at helping individuals identify and achieve their personal and professional goals. </span>,
-        links: '/life-coaching'
+       
     },
 
     {
         img: "/images/vehicles/car1.jpg",
         title: 'Hatchback',
+        subtitle:'e.g. Toyota Prius, VW Passat',
+        passenger:'7',
         para: <span>Career coaching is a specialized form of coaching focused on helping individuals navigate their career development, transitions, and aspirations.</span>,
-        links: '/career-coaching'
+       
     }
 ]
 
@@ -118,8 +124,10 @@ const containerVariants = {
                                         </Typography>
                                         <Typography
                                             variant='body2'
-                                            sx={{ textAlign: 'justify', color: 'black',px:3 }}
+                                            sx={{ textAlign: 'justify', color: 'black',px:3,lineHeight:1.7 }}
                                         >
+                                           <b>Types</b> : {item.subtitle}<br/>
+                                           <b> Passanger Capacity </b>: {item.passenger}<br/>
                                             {item.para}
                                         </Typography>
 

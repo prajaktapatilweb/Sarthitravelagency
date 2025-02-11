@@ -14,9 +14,10 @@ export default function Home() {
     <>
       {/* <Countdown /> */}
       <Servicecard/>
-      <Clinicinfo></Clinicinfo>
 
       <Dentalservices/>
+      <Clinicinfo></Clinicinfo>
+
       <Cartypes/>
 
       {/* <DrHeeral/> */}

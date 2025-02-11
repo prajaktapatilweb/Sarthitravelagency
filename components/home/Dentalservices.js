@@ -11,7 +11,7 @@ export default function Dentalservices() {
   var DetailObject = [
     {
         img: "/images/services/maincoach1.webp",
-        title: 'City Transport',
+        title: 'Roundtrip Cabs',
         para: <span>
 
             Agile coaching is a specialized form of coaching aimed at helping individuals, teams, and organizations adopt and optimize Agile methodologies.
@@ -20,22 +20,22 @@ export default function Dentalservices() {
     },
     {
         img: "/images/services/maincoach6.webp",
-        title: 'Airport Transport',
+        title: 'Oneway Drops',
         para: <span>
             Scrum Master coaching is a specialized role within the Agile framework focused on facilitating the adoption and practice of Scrum principles.</span>,
         links: '/scrum-master-coaching'
 
     },
     {
-        img: "/images/services/maincoach3.webp",
-        title: 'Business Transport',
+        img: "/images/services/maincoach6.webp",
+        title: 'Local Rentals',
         para: <span>Life coaching is a professional service aimed at helping individuals identify and achieve their personal and professional goals. </span>,
         links: '/life-coaching'
     },
 
     {
         img: "/images/services/maincoach2.webp",
-        title: 'Tour Transport',
+        title: 'Airport Transfers',
         para: <span>Career coaching is a specialized form of coaching focused on helping individuals navigate their career development, transitions, and aspirations.</span>,
         links: '/career-coaching'
     }
@@ -93,14 +93,15 @@ const containerVariants = {
                                     }}
                                 >
                                     <Box>
-                                        <Image
-                                            src={item.img}
-                                            width={100}
-                                            height={50}
-                                            layout='responsive'
-                                            objectFit='cover'
-                                            alt='car services'
-                                        ></Image>
+                                    <Box sx={{ width: "100%", height: "200px", position: "relative" }}> {/* ✅ Fixed Height */}
+  <Image
+    src={item.img}
+    layout="fill"  // ✅ Ensures full width & height scaling
+    objectFit="cover"  // ✅ Prevents stretching while covering the area
+    quality={100}  // ✅ Keeps image sharp (prevents blurriness)
+    alt="car services"
+  />
+</Box>
                                     </Box>
 
                                     <Box sx={{  pt:2,pb:4 }}>

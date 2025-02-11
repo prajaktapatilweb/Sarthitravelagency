@@ -12,6 +12,7 @@ import EmailTwoToneIcon from "@mui/icons-material/EmailTwoTone";
 import { Link as ScrollLink } from "react-scroll";
 import { StyledButton } from "../styled-button";
 import Navbar from "./navbar";
+import Servicecard from "../home/Servicecard";
 
 function ResponsiveAppBar() {
 
@@ -163,7 +164,7 @@ function ResponsiveAppBar() {
                     >
                         <Grid item
                             xs={12}
-                            md={7}
+                            md={9}
                             sx={{px:{xs:2,sm:2,md:4}}}
                         >
                             <motion.div className="textcontainer" variants={textVariants}
@@ -176,7 +177,7 @@ function ResponsiveAppBar() {
                                         sx={{ lineHeight: 1.6, fontSize: 23 }}
                                     >
                                         {" "}
-                                        Welcome To Taxica!
+                                        Experience the Difference with Premium Taxi Services
                                     </Typography>
                                     <Typography
                                         component="h2"
@@ -192,11 +193,11 @@ function ResponsiveAppBar() {
                                         }}
                                     >
                                         {" "}
-                                        Book Taxi For Your Ride
+                                        Arrive in style with our luxurious fleet and professional saarthis.
                                     </Typography>
                                     <Hidden mdDown>
 
-                                        <Typography
+                                        {/* <Typography
                                             component="span"
                                             sx={{
                                                 fontSize: "18px",
@@ -205,7 +206,7 @@ function ResponsiveAppBar() {
                                             }}
                                         >
                                             There are many variations of passages available the majority have suffered alteration in some form generators on the Internet tend to repeat predefined chunks injected humour randomised words look even slightly believable.
-                                        </Typography>
+                                        </Typography> */}
                                     </Hidden>
 
                                     <Box sx={{ "& button": { mt: 4, mb: 7 } }}>
@@ -240,7 +241,7 @@ function ResponsiveAppBar() {
 
                             </motion.div>
                         </Grid>
-                        <Grid item xs={12} md={5}>
+                        <Grid item xs={12} md={3}>
                             {/* <video
                                 src="/images/aboutgif.mp4"
                                 width="100%"
@@ -256,6 +257,7 @@ function ResponsiveAppBar() {
                     </Grid>
                 </Container>
             </Box>
+           
         </AppBar>
     );
 }

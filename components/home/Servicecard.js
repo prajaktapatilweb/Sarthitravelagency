@@ -8,34 +8,33 @@ import { headList2 } from '../constants/titlefile';
 export default function Servicecard() {
     var Details = [
         {
-          icons: "/images/icons/trip.png",
-          icons1: "/images/icons/root1.png",
-          title: 'Fast Pickup',
-          desc:'There are many variations of majority have suffered alteration in some form injected humour randomised words.'
+          icons: "/images/icons/trip1.png",
+          title: 'Private & Custom Tours',
       },
           {
-              icons: "/images/icons/rupee.png",
-              icons1: "/images/icons/implant1.png",
-              title: 'Special Discounts',
-              desc:'Restore your smile with durable and natural-looking dental implants.'
+              icons: "/images/icons/relax.png",
+              title: ' Hassle-Free Travel',
           },
           {
-            icons: "/images/icons/driver1.png",
-            icons1: "/images/icons/veeners1.png",
-            title: 'Expert Drivers',
-            desc:'Transform your smile with custom veneers for a flawless look.'
+            icons: "/images/icons/serviceicon2.png",
+            title: ' 24/7 Support',
         },
         
         {
-          icons: "/images/icons/serviceicon.png",
-          icons1: "/images/icons/serviceicon.png",
-          title: '24/7 Support',
-          desc:'Rebuild and enhance your smile with a personalized reconstruction plan.'
+          icons: "/images/icons/driver2.png",
+          title: 'Verified & Expert Saarthis',
   
       },
+      {
+        icons: "/images/icons/cleaner.png",
+        title: 'Clean & Well-Maintained Cars',
 
+    },
+    {
+        icons: "/images/icons/location1.png",
+        title: 'Doorstep Pickup & Drop',
 
-  
+    },
       ]
   
 
@@ -52,37 +51,44 @@ export default function Servicecard() {
       };
     return (
         <div>
-            <Box sx={{py:8}}>
-            <Container> 
-                <Heading data={headList2} />
-            <Grid container spacing={2}>
+             <Box sx={{zIndex:1,position:'relative'}}>
+            <Box  sx={{
+                width:'100%',
+                backgroundColor: 'primary.main',  py:{xs:3,sm:3,md:3},
+                mt: -5,
+                '&:hover': {
+                   
+                    transition: 'box-shadow 0.3s ease',
+                },
+            }} > 
+               
+               
+            <Grid container spacing={0}>
   {Details.map((item, i) => (
-      <Grid item xs={12} sm={6} md={3} key={i} sx={{ display: 'flex' }}>
+      <Grid item xs={12} sm={6} md={2} key={i} sx={{ display: 'flex' ,pb:2}}>
       <motion.div
         variants={fadeUpVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
       >
-            <Card
-                sx={{ height: 1,width:'100%' }}
-            >
-                <Box sx={{ display: 'flex', px:3,pt:3 }}>
+           
+                <Box sx={{ display: 'flex',px:{xs:4,sm:2,md:1} }}>
                 <Box
   sx={{
-    mr: 3,
+    mr: 1,
     alignSelf: "center",
-    backgroundColor: "primary.main",
+    backgroundColor: "white",
     borderRadius: "50%", // Makes it a circle
-    width: 55, // Adjust size of the circle
-    height: 55, // Keep it same as width for a perfect circle
+    width: 45, // Adjust size of the circle
+    height: 45, // Keep it same as width for a perfect circle
     display: "flex", // Enables flexbox for centering
     alignItems: "center", // Vertically centers the icon
     justifyContent: "center", // Horizontally centers the icon
     p: 1, // Padding for some spacing
   }}
 >
-  <Image src={item.icons} alt="icon" width={33} height={33} /> {/* Increased size */}
+  <Image src={item.icons} alt="icon" width={33} height={33} style={{padding:2}} /> {/* Increased size */}
 </Box>
 
                     <Box
@@ -96,7 +102,7 @@ export default function Servicecard() {
                             sx={{
                                 flex: 1,
                                 overflow: 'hidden',
-                                mr: 2,
+                                mr: 1,
                             }}
                         >
                             <Box
@@ -104,7 +110,7 @@ export default function Servicecard() {
                                    
                                     width: '100%',
                                     fontWeight: 500,
-                                    color: 'text.primary',
+                                    color: 'white',
                                 }}
                                 varient='h5'
                             >
@@ -114,23 +120,17 @@ export default function Servicecard() {
                         </Box>
                     </Box>
                 </Box>
-                <Box sx={{
-                                   px:4,
-                                    width: '100%',
-                                    color: 'text.secondary',
-                                }}
-                                component='p'
-                            >
-                                {item.desc}
-                            </Box>
-            </Card>
+               
+          
             </motion.div>
             </Grid>
   ))}
 
 </Grid>
-</Container>
+
 </Box>
+</Box>
+
         </div>
     )
 }
