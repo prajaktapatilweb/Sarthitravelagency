@@ -25,7 +25,7 @@ export default function Heading({ data }) {
                             sx={{
                                 // fontSize: { xs: 21, md: 22 },
                                 fontWeight: "400",
-                                color: 'primary.light',
+                                color: 'primary.main',
                                 pb:5,
                                 
 

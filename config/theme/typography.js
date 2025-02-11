@@ -16,10 +16,10 @@ const typography = {
       lineHeight: headingLineHeight,
       fontWeight: 700,
       '@media (min-width:600px)': {
-        fontSize: '2rem', // Medium screens
+        fontSize: '1.7rem', // Medium screens
       },
       '@media (min-width:960px)': {
-        fontSize: '2rem', // Large screens
+        fontSize: '1.7rem', // Large screens
       },
     },
     h2: {

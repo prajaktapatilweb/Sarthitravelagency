@@ -6,6 +6,7 @@ import Contact from '../components/home/Contact';
 import Clinicinfo from "../components/home/Clinicinfo";
 import DrHeeral from "../components/home/DrAkshay";
 import Servicecard from "../components/home/Servicecard";
+import Cartypes from "../components/home/Cartypes";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -16,6 +17,8 @@ export default function Home() {
       <Clinicinfo></Clinicinfo>
 
       <Dentalservices/>
+      <Cartypes/>
+
       {/* <DrHeeral/> */}
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>

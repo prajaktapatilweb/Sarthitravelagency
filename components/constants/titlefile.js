@@ -3,8 +3,8 @@ const headDetails = {
 
     service: {
 
-        title: 'Tailored Treatments for Every Need',
-        subtitle: 'We\'re here when you need us most—day or night'
+        title: 'Our Services',
+        subtitle: 'We\'re here when you need us most Day or Night'
 
     },
     drinfo: {

@@ -7,11 +7,14 @@ import { useTheme, useMediaQuery } from '@mui/material';
 import Heading from './Heading';
 import { headList2 } from '../constants/titlefile';
 
-export default function Dentalservices() {
+export default function Cartypes() {
   var DetailObject = [
     {
-        img: "/images/services/maincoach1.webp",
-        title: 'City Transport',
+        
+        
+        
+        img: "/images/vehicles/car1.jpg",
+        title: 'Sedan',
         para: <span>
 
             Agile coaching is a specialized form of coaching aimed at helping individuals, teams, and organizations adopt and optimize Agile methodologies.
@@ -19,23 +22,23 @@ export default function Dentalservices() {
        
     },
     {
-        img: "/images/services/maincoach6.webp",
-        title: 'Airport Transport',
+        img: "/images/vehicles/car2.jpg",
+        title: 'SUV',
         para: <span>
             Scrum Master coaching is a specialized role within the Agile framework focused on facilitating the adoption and practice of Scrum principles.</span>,
         links: '/scrum-master-coaching'
 
     },
     {
-        img: "/images/services/maincoach3.webp",
-        title: 'Business Transport',
+        img: "/images/vehicles/car3.jpg",
+        title: 'MUV',
         para: <span>Life coaching is a professional service aimed at helping individuals identify and achieve their personal and professional goals. </span>,
         links: '/life-coaching'
     },
 
     {
-        img: "/images/services/maincoach2.webp",
-        title: 'Tour Transport',
+        img: "/images/vehicles/car1.jpg",
+        title: 'Hatchback',
         para: <span>Career coaching is a specialized form of coaching focused on helping individuals navigate their career development, transitions, and aspirations.</span>,
         links: '/career-coaching'
     }
@@ -100,6 +103,7 @@ const containerVariants = {
                                             layout='responsive'
                                             objectFit='cover'
                                             alt='car services'
+                                            style={{padding:4}}
                                         ></Image>
                                     </Box>
 
