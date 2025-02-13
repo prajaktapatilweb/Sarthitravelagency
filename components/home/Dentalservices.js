@@ -21,7 +21,7 @@ export default function Dentalservices() {
         "& li": {
             marginRight: theme.spacing(1),
             "&.slick-active>div": {
-                backgroundColor: theme.palette.primary.dark,
+                backgroundColor: theme.palette.primary.main,
             },
         },
     },
@@ -96,7 +96,7 @@ export default function Dentalservices() {
 
                     {/* Title & Description */}
                     <Box sx={{ pt: 2, pb: 4, textAlign: "center" }}>
-                      <Typography gutterBottom variant="h5" sx={{ fontWeight: "bold", color: "#2d2d2d" }}>
+                      <Typography gutterBottom variant="h5"  className='paras'>
                         {item.title}
                       </Typography>
                       <Typography variant="body2" sx={{ color: "black", px: 3 }}>
