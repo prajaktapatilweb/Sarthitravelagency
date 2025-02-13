@@ -1,129 +1,126 @@
-import { Box, Card, Container, Grid } from '@mui/material';
+import { Box, Card, Container, Grid, Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import React from 'react'
 import Image from 'next/image';
 
 export default function Offercard() {
-  return (
-    <div>
-         <div class="offer-card">
-        <div class="discount-badge">50% OFF</div> 
-        <img src="/images/headerback1.jpg" alt="Offer Image" />
-        <div class="offer-content">
-            <h2>Special Travel Deal</h2>
-            <p>Book your roundtrip today and get a flat 50% discount! Hurry, limited time offer.</p>
-            <button class="offer-btn">Grab Offer</button>
-        </div>
-        </div>
-<Container>
-        <Grid container spacing={2} sx={{ mb: 7 }}>
-                        
+    return (
+        <div>
+            <section id='treatments' className="events2" >
+                <section
+                    style={{
+                        position: "relative",
+                        background: "linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
+                        overflow: "hidden",
+                        paddingBottom: "100px", // Ensures content stays above the wave
+                        paddingTop: '100px'
+                    }}
+                >
+                    <Container>
+                        <Grid container spacing={2} sx={{ mb: 7 }}>
+
                             <Grid item xs={12} sm={6} md={3} lg={3} >
-        <Card
-      sx={{ height: 1 }}
-      contentStyle={{ padding: 0, display: 'flex', flexDirection: 'column' }}
-    >
-      <Box
-        sx={{
-          py: 5,
-          px: 6,
-          color: 'primary.contrastText',
-          flex: 1,
-          backgroundColor: 'red',
-          display: 'flex',
-          flexDirection: 'column',
-        }}
-      >
-        <Box
-          sx={{
-            display: 'flex',
-            alignItems: 'center',
-          }}
-        >
-          <Box
-            component='h3'
-            sx={{
-              fontWeight: 500,
-              fontSize: 16,
-            }}
-          >
-           nnkhf
-          </Box>
-          <Box
-            sx={{
-              ml: 'auto',
-            }}
-          >
-            <SearchIcon
-              sx={{
-                cursor: 'pointer',
-                display: 'block',
-              }}
-            />
-          </Box>
-        </Box>
+                                <Card sx={{ height: 1, overflow: "hidden", borderRadius: 3, position: "relative",backgroundColor:'transparent' }}>
+                                    {/* ✨ Shine Effect Overlay */}
+                                    <Box
+                                        sx={{
+                                            position: "absolute",
+                                            top: 0,
+                                            left: "-100%",
+                                            width: "80%",
+                                            height: "70%",
+                                            background:
+                                                "linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%)",
+                                            transform: "skewX(-30deg)",
+                                            animation: "shineEffect 2s infinite linear ",
+                                            // transition:'ease-in-out'
+                                        }}
+                                    />
 
-        <Box
-          sx={{
-            py: 4,
-            flex: 1,
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            flexDirection: 'column',
-            textAlign: 'center',
-          }}
-        >
-          <Box
-            component='h1'
-            sx={{
-              fontWeight: 400,
-              fontSize: { xs: 24, sm: 36, md: 64, xl: 96 },
-            }}
-          >
-            -32<sup>0</sup>
-          </Box>
-          <Box
-            component='p'
-            sx={{
-              display: 'flex',
-              alignItems: 'center',
-              fontSize: 14,
-            }}
-          >
-            <Image
-              style={{
-                marginRight: 12,
-              }}
-              src={'/assets/images/weather/weather1.png'}
-              alt='weather'
-              width={24}
-              height={25}
-            />
-           kdhhdh
-          </Box>
-        </Box>
-      </Box>
+                                    {/* 🔹 Top Offer Section */}
+                                    <Box
+                                        sx={{
+                                            py: 3,
+                                            px: 4,
+                                            color: "primary.contrastText",
+                                            flex: 1,
+                                            background: "linear-gradient(135deg, #3E2BCE, #2DD3AA)",
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            textAlign: "center",
+                                        }}
+                                    >
+                                        {/* 🎯 Offer Title */}
+                                        <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
+                                            🚖 50% OFF on Your First Ride!
+                                        </Typography>
 
-      <Box
-        sx={{
-            py: 5,
-            px: 6,
-            display: "flex",
-            justifyContent: "space-between",
-            background: "#3E2BCE", // Change color as needed
-            color: "white",
-            position: "relative",
-            clipPath: "polygon( 100% 0, 100% 65%, 50% 100%, 0% 65%, 0% 0)", 
-            // clipPath: "polygon(0 0, 100% 0, 100% 40%, 50% 100%)", // ✅ Slanted Bottom
-          }}
-      >
-       mun
-      </Box>
-    </Card>
-    </Grid>
-    </Grid>
-    </Container>
-    </div>
-  )
+                                        {/* 🎯 Offer Description */}
+                                        <Typography variant="body2" sx={{ fontSize: 16, maxWidth: "80%", mb: 2 }}>
+                                            Book your trip today and get a flat **50% discount**! Limited time offer.
+                                        </Typography>
+                                    </Box>
+
+                                    {/* 🔥 Slanted Offer Section */}
+                                    <Box
+                                        sx={{
+                                            pt: 4,
+                                            pb: 5,
+                                            px: 6,
+                                            display: "flex",
+                                            flexDirection: "column",
+                                            alignItems: "center",
+                                            justifyContent: "center",
+                                            background: "white",
+                                            color: "white",
+                                            position: "relative",
+                                            clipPath: "polygon(100% 0, 100% 65%, 50% 100%, 0% 65%, 0% 0)",
+                                            textAlign: "center",
+                                        }}
+                                    >
+                                        {/* 🎯 Call to Action Button */}
+                                        <Box
+                                            component="button"
+                                            sx={{
+                                                backgroundColor: "white",
+                                                color: "#3E2BCE",
+                                                borderRadius: "20px",
+                                                padding: "10px 20px",
+                                                fontSize: "16px",
+                                                fontWeight: "bold",
+                                                cursor: "pointer",
+                                                border: "2px solid red",
+                                                transition: "0.3s",
+                                                "&:hover": {
+                                                    backgroundColor: "#2DD3AA",
+                                                    color: "white",
+                                                },
+                                            }}
+                                        >
+                                            Grab Offer Now
+                                        </Box>
+                                    </Box>
+
+                                    {/* ✨ Global CSS for Shine Animation */}
+                                    <style jsx global>{`
+    @keyframes shineEffect {
+      0% {
+        left: -100%;
+      }
+      100% {
+        left: 100%;
+      }
+    }
+  `}</style>
+                                </Card>
+
+
+
+                            </Grid>
+                        </Grid>
+                    </Container>
+                </section>
+            </section>
+        </div>
+    )
 }

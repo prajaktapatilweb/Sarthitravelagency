@@ -49,6 +49,15 @@ const fadeUpVariants = {
 
     return (
         <div>
+           {/* <div class="offer-card">
+        <div class="discount-badge">50% OFF</div> 
+        <img src="/images/headerback1.jpg" alt="Offer Image" />
+        <div class="offer-content">
+            <h2>Special Travel Deal</h2>
+            <p>Book your roundtrip today and get a flat 50% discount! Hurry, limited time offer.</p>
+            <button class="offer-btn">Grab Offer</button>
+        </div>
+        </div> */}
             <Box>
            <motion.div
   className="textcontainer"
