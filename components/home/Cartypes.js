@@ -86,7 +86,6 @@ export default function Cartypes() {
                                         <Card
                                             sx={{
                                                 height: '100%',
-                                                // boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',
                                                 mx: { xs: 5, sm: 0 },
                                                 display: 'flex',
                                                 flexDirection: 'column',
@@ -107,7 +106,8 @@ backgroundColor:'transparent'
                                                 </div>
                                             </Box>
 
-                                            <Box sx={{ pt: 2, pb: 4,backgroundColor:'white',mx:2,mt:-3,borderRadius:3,zIndex:5,position:'relative',border:'1px solid lightgrey' }}>
+                                               
+                                                <Box sx={{  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px', pt: 2, pb: 4,backgroundColor:'white',mx:2,mt:-4,borderRadius:3,zIndex:5,position:'relative',border:'1px outset lightgrey',  }}>
                                                 <Typography
                                                     gutterBottom
                                                     variant='h2'
