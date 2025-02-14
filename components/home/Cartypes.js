@@ -12,6 +12,8 @@ export default function Cartypes() {
             title: 'Sedan',
             subtitle: 'e.g. Toyota Prius, VW Passat',
             passenger: '4',
+            oil:'Petrol',
+            rates:200
 
         },
         {
@@ -19,6 +21,8 @@ export default function Cartypes() {
             title: 'SUV',
             subtitle: 'e.g. Toyota Prius, VW Passat',
             passenger: '6',
+            oil:'Disel',
+            rates:200
 
         },
         {
@@ -26,6 +30,8 @@ export default function Cartypes() {
             title: 'MUV',
             subtitle: 'e.g. Toyota Prius, VW Passat',
             passenger: '7',
+            oil:'Petrol',
+            rates:100
 
         },
 
@@ -34,6 +40,8 @@ export default function Cartypes() {
             title: 'Hatchback',
             subtitle: 'e.g. Toyota Prius, VW Passat',
             passenger: '7',
+            oil:'Disel',
+            rates:200
 
         }
     ]
@@ -110,11 +118,12 @@ backgroundColor:'transparent'
                                                     {item.title}
                                                 </Typography>
                                                 <Typography
-                                                    variant='body2'
-                                                    sx={{ textAlign: 'justify', color: 'black', px: 3, lineHeight: 1.7 }}
+                                                    variant='body1'
+                                                    sx={{ textAlign: 'justify', color: 'black', px: 3, lineHeight: 1.7,fontWeight:500 }}
                                                 >
                                                     <b> Passanger Capacity </b>: {item.passenger}<br />
-                                                    {item.para}
+                                                    {item.oil}<br/>
+                                                    {item.rates} Km/h
                                                 </Typography>
 
 
