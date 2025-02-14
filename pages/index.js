@@ -8,6 +8,7 @@ import DrHeeral from "../components/home/DrAkshay";
 import Servicecard from "../components/home/Servicecard";
 import Cartypes from "../components/home/Cartypes";
 import Offercard from "../components/home/Offercard";
+import TabsIntroduction from "../components/home/TabsIntroduction";
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -17,10 +18,11 @@ export default function Home() {
       <Servicecard/>
 
       <Dentalservices/>
+      {/* <Cartypes/> */}
+<TabsIntroduction/>
       <Offercard/>
       <Clinicinfo></Clinicinfo>
 
-      <Cartypes/>
 
       {/* <DrHeeral/> */}
       <Suspense fallback=
