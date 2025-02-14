@@ -86,19 +86,20 @@ backgroundColor:'transparent'
                                             }}
                                         >
                                             <Box>
+                                            <div className='imgbox'>
+                                            <div className='content'>
                                                 <Image
                                                     src={item.img}
-                                                    width={100}
-                                                    height={50}
-                                                    layout='responsive'
-                                                    objectFit='cover'
+                                                    layout="fill"
+                                                    objectFit="cover"  
+                                                    style={{borderRadius: "5px"}}
                                                     alt='car services'
-                                               
-                                                    style={{ padding: 4 ,border:'1px solid lightgrey',  boxShadow: 'rgba(0, 0, 0, 0.35) 0px 5px 15px',}}
                                                 ></Image>
+                                                </div>
+                                                </div>
                                             </Box>
 
-                                            <Box sx={{ pt: 2, pb: 4,backgroundColor:'white',mx:2,mt:-3,borderRadius:3 }}>
+                                            <Box sx={{ pt: 2, pb: 4,backgroundColor:'white',mx:2,mt:-3,borderRadius:3,zIndex:5,position:'relative',border:'1px solid lightgrey' }}>
                                                 <Typography
                                                     gutterBottom
                                                     variant='h2'

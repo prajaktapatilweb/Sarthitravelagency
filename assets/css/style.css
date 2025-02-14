@@ -511,7 +511,7 @@ section {
 .imgbox {
   position: relative;
   width: 100%; /* ✅ Takes full width of its Grid container */
-  height: 400px; /* ✅ Takes full height of its Grid container */
+  height: 280px; /* ✅ Takes full height of its Grid container */
   background:#d70030;
   border-radius: 5px;
   overflow: hidden;
