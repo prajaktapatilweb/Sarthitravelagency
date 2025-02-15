@@ -1,3 +1,4 @@
+import { Box } from "@mui/material";
 import React, { useState } from "react";
 
 const MentorCardItem = ({ item }) => {
@@ -9,18 +10,25 @@ const MentorCardItem = ({ item }) => {
   const truncatedText = description.slice(0, 160); // First 230 characters
 
   return (
-    <div className="mentor-card">
-      <div className="mentor-card-inner">
-        <img src={item.photo} alt={item.name} className="mentor-img" />
-        <h3 className="mentor-name">{item.name}</h3>
-        <p className="mentor-description">
+<Box sx={{pb:3}}>
+    <div class="review-card">
+    <div class="review-header">
+        <h3 class="review-name">{item.name}</h3>
+        <div class="review-stars">⭐⭐⭐⭐⭐</div>
+    </div>
+    <p class="review-text">
+   
           {isReadMore ? description : `${truncatedText}...`}
           <span onClick={toggleReadMore} className="toggle-read-more">
             {isReadMore ? " Show Less" : " Read More"}
           </span>
-        </p>
-      </div>
+       
+    </p>
+    <div class="review-footer">
+        <span class="review-source">Google Review ⭐</span>
     </div>
+</div>
+</Box>
   );
 };
 

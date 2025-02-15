@@ -18,10 +18,10 @@ export default function Home() {
       <Servicecard/>
 
       <Dentalservices/>
-      {/* <Cartypes/> */}
-<TabsIntroduction/>
+      <Cartypes/>
+{/* <TabsIntroduction/> */}
       <Offercard/>
-      <Clinicinfo></Clinicinfo>
+      {/* <Clinicinfo></Clinicinfo> */}
 
 
       {/* <DrHeeral/> */}
@@ -29,7 +29,7 @@ export default function Home() {
         {<div>Component are loading please wait...</div>}>
         {/* <Photogallery /> */}
         {/* <Awards/> */}
-        {/* <Testimonial></Testimonial> */}
+        <Testimonial></Testimonial>
       </Suspense>
     
       <Contact></Contact> 

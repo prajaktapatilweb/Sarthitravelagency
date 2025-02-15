@@ -2,84 +2,121 @@ import { Box, Card, Container, Grid, Typography } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import React from 'react'
 import Image from 'next/image';
+import Heading from './Heading';
+import { headList4 } from '../constants/titlefile';
 
 export default function Offercard() {
+    var DetailObject = [
+        {
+            img: "/images/offercard1.jpg",
+            title: 'Sedan',
+          
+
+        },
+        {
+            img: "/images/offercard2.jpg",
+            title: 'SUV',
+         
+        },
+        {
+            img: "/images/vehicles/car3.jpg",
+            title: 'MUV',
+          
+
+        },
+
+        {
+            img: "/images/vehicles/car1.jpg",
+            title: 'Hatchback',
+           
+           
+
+        }
+    ]
     return (
         <div>
-            <section id='treatments' className="events2" >
-                <section
-                    style={{
-                        position: "relative",
-                        background: "linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6))",
-                        overflow: "hidden",
-                        paddingBottom: "100px", // Ensures content stays above the wave
-                        paddingTop: '100px'
-                    }}
-                >
-                    <Container>
-                        <Grid container spacing={2} sx={{ mb: 7 }}>
 
-                            <Grid item xs={12} sm={6} md={3} lg={3} >
-                                <Card sx={{ height: 1, overflow: "hidden", borderRadius: 3, position: "relative",backgroundColor:'transparent' }}>
-                                    {/* ✨ Shine Effect Overlay */}
-                                    <Box
-                                        sx={{
+            <Box id='treatments' sx={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/offerback2.jpg")`, backgroundRepeat: 'no-repeat', backgroundPosition: "center", backgroundSize: "cover", pt: 10, pb: 7 }}  >
+                <Container>
+                    <Heading data={headList4}></Heading>
+                    <Grid container spacing={2} sx={{ mb: 7 }}>
+                                                    {DetailObject.map((item, i) => (
+                                                        <Grid item xs={12} sm={6} md={3} lg={3} key={i}>
+                            <Card sx={{ height: 1, overflow: "hidden", borderRadius: 3, position: "relative", backgroundColor: 'transparent', }}>
+                                {/* ✨ Shine Effect Overlay */}
+                                <Box
+                                    sx={{
+                                        position: "absolute",
+                                        top: 0,
+                                        left: "-100%",
+                                        width: "80%",
+                                        height: "70%",
+                                        background:
+                                            "linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%)",
+                                        transform: "skewX(-30deg)",
+                                        animation: "shineEffect 2s infinite linear ",
+                                        // transition:'ease-in-out'
+                                    }}
+                                />
+  <Box sx={{ width: "100%", height: "180px", position: "relative" }}>
+                      <Image
+                        src={item.img}
+                        layout="fill"
+                        objectFit="cover"
+                        quality={100}
+                        alt="car services"
+                        style={{ borderTop: '2px solid #d70030', borderLeft: '1.5px solid #d70030', borderRight: '1.9px solid #d70030',borderTopLeftRadius:15,borderTopRightRadius:15}}
+                      />
+                    </Box>
+                                {/* <Image src={item.img} alt="offer" width={100} height={100} layout='responsive' objectFit='cover'  /> */}
+
+
+                                {/* 🔥 Slanted Offer Section */}
+                                <Box
+                                    sx={{
+                                        mt: -1,
+                                        pt: 4,
+                                        pb: 5,
+                                        px: 6,
+                                        display: "flex",
+                                        flexDirection: "column",
+                                        alignItems: "center",
+                                        justifyContent: "center",
+                                        background: "#d70030",
+                                        color: "black",
+                                        position: "relative",
+                                        clipPath: "polygon(100% 0, 100% 65%, 50% 100%, 0% 65%, 0% 0)",
+                                        textAlign: "center",
+
+                                        // ✅ Add border using ::before
+                                        "&::before": {
+                                            content: '""',
                                             position: "absolute",
-                                            top: 0,
-                                            left: "-100%",
-                                            width: "80%",
-                                            height: "70%",
-                                            background:
-                                                "linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%)",
-                                            transform: "skewX(-30deg)",
-                                            animation: "shineEffect 2s infinite linear ",
-                                            // transition:'ease-in-out'
-                                        }}
-                                    />
+                                            marginBottom: 0.2,
+                                            marginLeft: 0.2,
+                                            marginRight: 0.2,
+                                            top: 0, // Expand border outside
+                                            left: 0,
+                                            right: 0,
+                                            bottom: 0,
+                                            background: "lightgrey",
 
-                                    {/* 🔹 Top Offer Section */}
-                                    <Box
-                                        sx={{
-                                            py: 3,
-                                            px: 4,
-                                            color: "primary.contrastText",
-                                            flex: 1,
-                                            background: "linear-gradient(135deg, #3E2BCE, #2DD3AA)",
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            textAlign: "center",
-                                        }}
-                                    >
-                                        {/* 🎯 Offer Title */}
-                                        <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1 }}>
-                                            🚖 50% OFF on Your First Ride!
-                                        </Typography>
+                                            clipPath: "polygon(100% 0, 100% 65%, 50% 100%, 0% 65%, 0% 0)", // ✅ Same shape as main box
+                                            zIndex: -9, // ✅ Places border behind the main box
+                                        },
+                                    }}
+                                >
 
-                                        {/* 🎯 Offer Description */}
-                                        <Typography variant="body2" sx={{ fontSize: 16, maxWidth: "80%", mb: 2 }}>
-                                            Book your trip today and get a flat **50% discount**! Limited time offer.
-                                        </Typography>
-                                    </Box>
+                                    <Typography variant="h5" sx={{ fontWeight: "bold", mb: 1, color: 'black' }}>
+                                        🚖 50% OFF on Your First Ride!
+                                    </Typography>
 
-                                    {/* 🔥 Slanted Offer Section */}
-                                    <Box
-                                        sx={{
-                                            pt: 4,
-                                            pb: 5,
-                                            px: 6,
-                                            display: "flex",
-                                            flexDirection: "column",
-                                            alignItems: "center",
-                                            justifyContent: "center",
-                                            background: "white",
-                                            color: "white",
-                                            position: "relative",
-                                            clipPath: "polygon(100% 0, 100% 65%, 50% 100%, 0% 65%, 0% 0)",
-                                            textAlign: "center",
-                                        }}
-                                    >
-                                        {/* 🎯 Call to Action Button */}
-                                        <Box
+                                    {/* 🎯 Offer Description */}
+                                    <Typography variant="body2" sx={{ fontSize: 16, maxWidth: "80%", mb: 2, color: 'black' }}>
+                                        Book your trip today and get a flat **50% discount**! Limited time offer.
+                                    </Typography>
+                                    {/* 🎯 Call to Action Button */}
+                                    {/* <Box
                                             component="button"
                                             sx={{
                                                 backgroundColor: "white",
@@ -98,11 +135,11 @@ export default function Offercard() {
                                             }}
                                         >
                                             Grab Offer Now
-                                        </Box>
-                                    </Box>
+                                        </Box> */}
+                                </Box>
 
-                                    {/* ✨ Global CSS for Shine Animation */}
-                                    <style jsx global>{`
+                                {/* ✨ Global CSS for Shine Animation */}
+                                <style jsx global>{`
     @keyframes shineEffect {
       0% {
         left: -100%;
@@ -112,15 +149,16 @@ export default function Offercard() {
       }
     }
   `}</style>
-                                </Card>
+                            </Card>
 
 
 
-                            </Grid>
                         </Grid>
-                    </Container>
-                </section>
-            </section>
+                                                    ))}
+                    </Grid>
+                </Container>
+
+            </Box>
         </div>
     )
 }

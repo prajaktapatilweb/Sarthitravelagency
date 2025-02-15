@@ -624,3 +624,60 @@ section {
 .offer-btn:hover {
   background: #e60000;
 }
+
+
+/* Review Card */
+.review-card {
+ 
+  background: white;
+  padding: 20px;
+  margin-right: 15px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-align: left;
+  position: relative;
+  border: 1px solid lightgrey; /* Google Blue */
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.review-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Review Header */
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.review-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Review Stars */
+.review-stars {
+  font-size: 16px;
+  color: #FFC107; /* Google Yellow */
+}
+
+/* Review Text */
+.review-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+/* Review Footer */
+.review-footer {
+  font-size: 12px;
+  color: #777;
+  text-align: right;
+  font-style: italic;
+}

@@ -3,7 +3,7 @@ import { Box, Card, CardActions, Container, Grid, Hidden, Link, Typography } fro
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 import Heading from './Heading';
-import { headList2 } from '../constants/titlefile';
+import { headList2, headList3, headList4 } from '../constants/titlefile';
 
 export default function Cartypes() {
     var DetailObject = [
@@ -64,10 +64,11 @@ export default function Cartypes() {
 
     return (
         <div>
-            <section id="treatments">
+            <section id="treatments" style={{backgroundColor:'white'}}>
                 <Box sx={{ paddingTop: "50px" }}>
 
                     <Container component={motion.div} variants={containerVariants} initial="hidden" animate="visible">
+                       <Heading data={headList3}></Heading>
                         <motion.div
                             initial={{ y: 100, opacity: 0 }}
                             whileInView={{ y: 0, opacity: 1 }}
