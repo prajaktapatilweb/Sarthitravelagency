@@ -20,12 +20,11 @@ import Image from "next/image";
 
 const navItems = [
   { linkID: "/#home", label: "Home" },
-  { linkID: "/#aboutus", label: "About Us" },
-  { linkID: "/#treatments", label: "Treatments" },
-  { linkID: "/#Doctors", label: "Doctors" },
-  { linkID: "/#gallery", label: "Gallery" },
+  { linkID: "/#services", label: "Services" },
+  { linkID: "/#vehicles", label: "Vehicles" },
+  { linkID: "/#offers", label: "Offers" },
   { linkID: "/#testimonials", label: "Testimonials" },
-//   { linkID: "/#contactform", label: "Contact" },
+  { linkID: "/#contactform", label: "Contact Us" },
 ];
 
 export default function Navbar() {

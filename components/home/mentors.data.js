@@ -4,64 +4,44 @@ export const data = [
     {
 
         id: 1,
-        photo: '/images/mentors/testis4.jpeg',
-        name: 'Kirtikala Kamdar',
+        name: ' Amit Jain',
         category: '',
-        description: 'Dr. Heeral is a very good professional doctor. Put us at ease n explained all the procedure. It was removal of 4 wisdom teeth and it was done without any hassle, perfectly.',
+        description: 'Excellent service from Nashik to Mumbai! Saarthi assigned one of their best drivers to me for the trip. The saarthi was punctual, and the vehicle was clean and comfortable. I highly recommend Saarthi Tours & Travels for their professionalism.',
 
     },
     {
 
         id: 2,
-        photo: '/images/mentors/testis2.jpeg',
-        name: 'Ishan Mehta',
+        name: 'Gaurav Bhati',
         category: '',
-        description: 'Always a great experience. I requested Dr. Heeral to get my dental issues sorted out soon as I was travelling out of Mumbai & she was very prompt & finished my treatment within three visits without any hassle. It was a painless & comfortable experience. Best thing is, I never had to wait for my turn. Clinic is well equipped & the staff is good too. Clinic is also centrally located in Borivali.',
+        description: 'Our family\'s Ashtavinayak Darshan was a truly spiritual and well-organized experience. Prathmesh Chaudhari was incredibly helpful and responsive, ensuring we had a smooth and enriching trip between temples. His quick responses and professional yet friendly nature made the entire journey stress-free. We\'re so grateful for the seamless experience and highly recommend this tour for families seeking a meaningful pilgrimage.',
 
     },
     {
 
         id: 3,
-        photo: '/images/mentors/testis3.jpeg',
-        name: 'Meeta Kaushik',
+        name: ' Swapnil Patil',
         category: ' ',
-        description: 'A very touching experience from Dr. Heeral and Dr. Dey and the entire team. Highly recommendable for any dental treatment and surgery. A place which is more than just a dental clinic. Visit it and feel the experience with the team...',
+        description: 'I recently booked a trip from Pune to Bhimashankar. The entire experience was seamless. What I appreciated most was their tagline, \'Aapke Safar ka Humsafar\' – truly a companion for the journey!',
 
     },
     {
 
         id: 4,
-        photo: '/images/mentors/testis1.jpeg',
-        name: 'Shruti Tailor',
+        name: ' Nikhil Mahajan',
         category: '',
-        description: 'Excellent dental care! The clinic was clean, the staff were friendly, and doctor was highly professional. Got my tooth extracted and a couple of tooth fillings. I was anxious but Dr.Heeral explained me the entire procedure clearly and ensured my comfort throughout the treatment. Very happy with the overall experience.',
+        description: 'Our Nashik to Alibaug trip with Saarthi Tours & Travels was fantastic. The car was excellent – clean, comfortable, and well-maintained. Services were top-notch, with a smooth booking process and attention to detail. The staff was friendly and professional. Prathmesh Chaudhari\'s cool and professional nature made the trip enjoyable. Saarthi truly lived up to their tagline, "Aapke Safar ka Humsafar"! Highly recommended.',
 
     },
     {
 
         id: 5,
         photo: '/images/mentors/testi5.jpeg',
-        name: 'Rekha Pandya',
+        name: 'Nikita Khandelwal',
         category: '',
-        description: 'Highly recommend Smile Solutions Advanced Dental Care Clinic for any and all dental issues.. I had taken route canal treatment and it was very smooth and successful. Dr Kalpesh and Dr Heeral both are highly expertise and experienced to take care of patients. Both doctors are very kind and humble too.. whenever you have toothache do visit clinic without a single thought and without delay .. last and not least is I found treatment pocket friendly too .. 🎉',
+        description: 'We were thoroughly impressed with our Mumbai to Goa trip. Our saarthi was courteous and made the long journey enjoyable. We especially appreciated that they don\'t call their employees "drivers," but rather "saarthis." It added a personal touch that we really liked. The car was comfortable, providing ample space for luggage and a relaxing ride. The rates were competitive, making it a great value for the service provided. 🎉',
 
-    },    {
-
-        id: 6,
-        photo: '/images/mentors/testi7.jpeg',
-        name: 'Akash Munde',
-        category: '',
-        description: 'Dr. Heeral Chikhal is simply the best! I visited her for a crown replacement, and she was incredibly thorough in her approach. The clinic\'s environment is welcoming, and the staff is very supportive throughout the treatment.',
-
-    },    {
-
-        id: 7,
-        photo: '/images/mentors/testi6.jpeg',
-        name: 'Shivani',
-        category: '',
-        description: 'Searching for a dentist near me led to discovering Dr. Kalpesh Dey, whose clinic came highly recommended for cosmetic dentistry. Upon arrival, the welcoming atmosphere and professionalism of the staff immediately created a sense of comfort. During the consultation, he took the time to listen to concerns and thoroughly explained the veneer placement process. His attention to detail was impressive; he made sure all questions were answered and that every step was clear. As the procedure progressed, his precision and care were evident. Once completed, the transformation was remarkable—resulting in a beautiful smile that felt both natural and confident. This experience has been truly rewarding, making Dr. Dey highly recommended for anyone looking to enhance their smile through cosmetic dentistry!',
-
-    },
+    },    
    
    
 ];

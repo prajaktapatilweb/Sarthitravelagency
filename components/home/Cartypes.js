@@ -64,7 +64,7 @@ export default function Cartypes() {
 
     return (
         <div>
-            <section id="treatments" style={{backgroundColor:'white'}}>
+            <section id="vehicles" style={{backgroundColor:'white'}}>
                 <Box sx={{ paddingTop: "50px" }}>
 
                     <Container component={motion.div} variants={containerVariants} initial="hidden" animate="visible">

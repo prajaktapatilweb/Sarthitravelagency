@@ -36,7 +36,7 @@ export default function Offercard() {
     return (
         <div>
 
-            <Box id='treatments' sx={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/offerback2.jpg")`, backgroundRepeat: 'no-repeat', backgroundPosition: "center", backgroundSize: "cover", pt: 10, pb: 7 }}  >
+            <Box id='offers' sx={{ backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("/images/offerback2.jpg")`, backgroundRepeat: 'no-repeat', backgroundPosition: "center", backgroundSize: "cover", pt: 10, pb: 7 }}  >
                 <Container>
                     <Heading data={headList4}></Heading>
                     <Grid container spacing={2} sx={{ mb: 7 }}>
@@ -50,15 +50,16 @@ export default function Offercard() {
                                         top: 0,
                                         left: "-100%",
                                         width: "80%",
-                                        height: "70%",
+                                        height: "40%",
+                                        zIndex:1 ,
                                         background:
-                                            "linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0) 60%)",
+                                            "linear-gradient(120deg, rgba(255, 255, 255, 0) 30%, rgba(255, 255, 255, 0.2) 50%, rgba(255, 255, 255, 0) 60%)",
                                         transform: "skewX(-30deg)",
                                         animation: "shineEffect 2s infinite linear ",
                                         // transition:'ease-in-out'
                                     }}
                                 />
-  <Box sx={{ width: "100%", height: "180px", position: "relative" }}>
+  <Box sx={{ width: "100%", height: "180px",position:'relative'}}>
                       <Image
                         src={item.img}
                         layout="fill"

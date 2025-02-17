@@ -58,7 +58,7 @@ export default function Dentalservices() {
   const [activeSlide, setActiveSlide] = useState(0);
 
   return (
-    <section id="treatments">
+    <section id="services">
       <Box sx={{ py: "50px" }}>
         <Heading data={headList2} />
         <Container>

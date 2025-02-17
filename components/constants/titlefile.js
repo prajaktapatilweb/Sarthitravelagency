@@ -19,14 +19,14 @@ const headDetails = {
 
     },
     testi: {
-        title: 'Why Our Patients Love Us',
+        title: 'Real Stories, Real Experiences',
         subtitle: 'Feedback that speaks volumes about our services.'
     },
     
   
     connect: {
         title: 'Have Questions? We’re Listening!',
-        subtitle: 'Your inquiries are important to us—reach out today!'
+        subtitle: ' Discover why travelers trust us for their transportation needs.'
     }
 };
 

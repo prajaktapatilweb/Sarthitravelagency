@@ -14,21 +14,13 @@ const Testimonial = lazy(() => import('../components/home/Testimonial'))
 export default function Home() {
   return (
     <>
-      {/* <Countdown /> */}
       <Servicecard/>
-
       <Dentalservices/>
       <Cartypes/>
 {/* <TabsIntroduction/> */}
       <Offercard/>
-      {/* <Clinicinfo></Clinicinfo> */}
-
-
-      {/* <DrHeeral/> */}
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
-        {/* <Photogallery /> */}
-        {/* <Awards/> */}
         <Testimonial></Testimonial>
       </Suspense>
     
